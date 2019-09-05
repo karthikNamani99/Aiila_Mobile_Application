@@ -1,4 +1,4 @@
-package com.example.aiila_mobile_application.activities;
+package com.example.aiila_mobile_application.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

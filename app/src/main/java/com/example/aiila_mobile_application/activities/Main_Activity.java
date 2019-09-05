@@ -19,6 +19,11 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.aiila_mobile_application.R;
+import com.example.aiila_mobile_application.fragments.Account_Fragment;
+import com.example.aiila_mobile_application.fragments.DashBoard_Fragment;
+import com.example.aiila_mobile_application.fragments.General_Fragment;
+import com.example.aiila_mobile_application.fragments.Help_Fragment;
+import com.example.aiila_mobile_application.fragments.Notifications_Fragment;
 import com.google.android.material.navigation.NavigationView;
 
 import de.hdodenhof.circleimageview.CircleImageView;

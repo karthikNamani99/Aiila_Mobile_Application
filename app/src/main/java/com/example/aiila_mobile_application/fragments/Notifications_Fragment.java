@@ -1,4 +1,4 @@
-package com.example.aiila_mobile_application.activities;
+package com.example.aiila_mobile_application.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class Control_machine_Fragment extends Fragment {
+public class Notifications_Fragment extends Fragment {
 
     @Nullable
     @Override

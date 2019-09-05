@@ -21,6 +21,9 @@
         <activity android:name=".activities.Main_Activity"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
 
+        <activity android:name=".activities.SlotConfiguration"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
         <activity android:name=".activities.Forgot_Password_Activity"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
 
