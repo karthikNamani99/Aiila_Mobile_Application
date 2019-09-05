@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_150"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/dimen_85"
+            android:layout_height="@dimen/dimen_85"
+
+            android:src="@mipmap/ailaa_logo" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginLeft="@dimen/dimen_55"
+        android:layout_marginTop="@dimen/dimen_55"
+        android:layout_marginRight="@dimen/dimen_55"
+        android:inputType="text"
+        android:textSize="@dimen/dimen_14"
+        android:textColorHint="#80000000"
+        android:textColor="@color/colorBlack"
+        android:background="@drawable/background_edittext"
+        android:hint="Enter Email/Mobile Number"
+        android:paddingLeft="@dimen/dimen_12" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginLeft="@dimen/dimen_55"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:inputType="textPassword"
+        android:textColorHint="#80000000"
+        android:textSize="@dimen/dimen_14"
+        android:textColor="@color/colorBlack"
+        android:layout_marginRight="@dimen/dimen_55"
+        android:background="@drawable/background_edittext"
+        android:hint="Enter Password"
+        android:paddingLeft="@dimen/dimen_15" />
+
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginLeft="@dimen/dimen_55"
+        android:layout_marginTop="@dimen/dimen_40"
+        android:layout_marginRight="@dimen/dimen_55"
+        android:background="@drawable/background_button"
+        android:backgroundTint="@color/colorPrimary"
+        android:textSize="@dimen/dimen_15"
+        android:paddingLeft="@dimen/dimen_15"
+        android:text="CONTINUE"
+        android:textColor="@color/colorWhite" />
+
+
+    <TextView
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:gravity="center"
+        android:text="No Account? Sign Up Here"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/dimen_12"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/btn_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:gravity="center"
+        android:text="Unable to Login? Reset Here"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/dimen_12"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_google"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginLeft="@dimen/dimen_35"
+        android:layout_marginTop="@dimen/dimen_35"
+        android:textSize="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_35"
+        android:background="@drawable/background_edittext1"
+        android:drawableLeft="@drawable/search"
+        android:drawableTint="@color/colorAccent"
+        android:paddingLeft="@dimen/dimen_15"
+        android:text="Login with google"
+        android:textColor="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/btn_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginLeft="@dimen/dimen_35"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_35"
+        android:textSize="@dimen/dimen_15"
+        android:drawableTint="@color/colorAccent"
+        android:background="@drawable/background_edittext1"
+        android:drawableLeft="@drawable/facebook_logo"
+        android:paddingLeft="@dimen/dimen_15"
+        android:text="login with facebook"
+        android:textColor="@color/colorAccent" />
+
+</LinearLayout>

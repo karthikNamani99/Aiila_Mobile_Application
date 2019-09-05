@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_150"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/dimen_85"
+            android:layout_height="@dimen/dimen_85"
+
+            android:src="@mipmap/ailaa_logo" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginLeft="@dimen/dimen_55"
+        android:layout_marginTop="@dimen/dimen_40"
+        android:layout_marginRight="@dimen/dimen_55"
+        android:background="@drawable/background_edittext"
+        android:hint="Your Name"
+        android:inputType="text"
+        android:paddingLeft="@dimen/dimen_15"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="#80000000"
+        android:textSize="@dimen/dimen_15" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginLeft="@dimen/dimen_55"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_55"
+        android:background="@drawable/background_edittext"
+        android:hint="yourmail@gmail.com"
+        android:inputType="text"
+        android:paddingLeft="@dimen/dimen_15"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="#80000000"
+        android:textSize="@dimen/dimen_15" />
+
+    <EditText
+        android:id="@+id/edit_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginLeft="@dimen/dimen_55"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_55"
+        android:background="@drawable/background_edittext"
+        android:hint="Mobile Number"
+        android:inputType="phone"
+        android:paddingLeft="@dimen/dimen_15"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="#80000000"
+        android:textSize="@dimen/dimen_15" />
+
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginLeft="@dimen/dimen_55"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_55"
+        android:background="@drawable/background_edittext"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/dimen_15"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="#80000000"
+        android:textSize="@dimen/dimen_15" />
+
+    <EditText
+        android:id="@+id/edit_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginLeft="@dimen/dimen_55"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_55"
+        android:background="@drawable/background_edittext"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/dimen_15"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="#80000000"
+        android:textSize="@dimen/dimen_15" />
+
+    <TextView
+        android:id="@+id/btn_terms_conditions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:gravity="center"
+        android:text="By clicking signup you agree terms of this aiila application"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/dimen_14"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_20"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginLeft="@dimen/dimen_55"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_55"
+        android:background="@drawable/background_button"
+        android:backgroundTint="@color/colorPrimary"
+        android:paddingLeft="@dimen/dimen_15"
+        android:text="signup"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/dimen_15" />
+
+
+</LinearLayout>
