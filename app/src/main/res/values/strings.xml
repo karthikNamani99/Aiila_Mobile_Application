@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">Aiila_Mobile_Application</string>
+    <string name="notification">Notification</string>
+    <string name="nav_general">General</string>
+    <string name="nav_account">Account</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="nav_help">Help</string>
+    <string name="dashboard">DashBoard</string>
+    <string name="title_home">Home</string>
+    <string name="title_Analytics">Analytics</string>
+    <string name="title_slot_configuration">Slot Configuar</string>
+    <string name="title_control_machine">Control Machine</string>
+
+    <string-array name="nav_item_activity_titles">
+        <item>DashBoard</item>
+        <item>Notification</item>
+        <item>General</item>
+        <item>Account</item>
+        <item>Help</item>
+
+
+    </string-array>
 </resources>
