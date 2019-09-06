@@ -1,120 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:background="@color/colorWhite"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
 
-    <include
-        android:id="@+id/toolbar"
-        layout="@layout/toolbar" />
+    android:background="#ffffff">
+
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+
         android:layout_below="@+id/toolbar">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center">
-            <RelativeLayout
-                android:id="@+id/imagesLayout"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/dimen_275">
-
                 <RelativeLayout
-                    android:id="@+id/machineLayout"
-                    android:layout_width="@dimen/dimen_250"
-                    android:layout_height="@dimen/dimen_275"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="@dimen/dimen_55">
+                    android:id="@+id/imagesLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_275">
 
-                    <ImageView
-                        android:id="@+id/slotImageView"
+                    <RelativeLayout
+                        android:id="@+id/machineLayout"
                         android:layout_width="@dimen/dimen_250"
                         android:layout_height="@dimen/dimen_275"
                         android:layout_centerHorizontal="true"
-                        android:scaleType="fitXY"
-                        android:src="@mipmap/machine" />
+                        android:layout_marginTop="@dimen/dimen_55">
+
+                        <ImageView
+                            android:id="@+id/slotImageView"
+                            android:layout_width="@dimen/dimen_250"
+                            android:layout_height="@dimen/dimen_275"
+                            android:layout_centerHorizontal="true"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/machine" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/bottolesLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        >
+
+                        <ImageView
+                            android:id="@+id/bottle1ImageView1"
+                            android:layout_width="@dimen/dimen_20"
+                            android:layout_height="@dimen/dimen_70"
+                            android:scaleType="fitXY"
+                            android:layout_marginLeft="@dimen/dimen_8"
+                            android:layout_marginTop="@dimen/dimen_20"
+                            android:src="@mipmap/bottleash"
+                            android:visibility="visible"/>
+
+                        <ImageView
+                            android:id="@+id/bottle2ImageView1"
+                            android:layout_width="@dimen/dimen_20"
+                            android:layout_height="@dimen/dimen_70"
+                            android:layout_marginLeft="@dimen/dimen_8"
+                            android:layout_marginTop="@dimen/dimen_25"
+                            android:layout_toRightOf="@+id/bottle1ImageView1"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/bottlesquare" />
+
+                        <ImageView
+                            android:id="@+id/bottle1ImageView2"
+                            android:layout_width="@dimen/dimen_20"
+                            android:layout_height="@dimen/dimen_70"
+                            android:layout_marginLeft="@dimen/dimen_8"
+                            android:layout_marginTop="@dimen/dimen_15"
+                            android:layout_toRightOf="@+id/bottle2ImageView1"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/bottleash" />
+
+                        <ImageView
+                            android:id="@+id/bottle2ImageView2"
+                            android:layout_width="@dimen/dimen_20"
+                            android:layout_height="@dimen/dimen_70"
+                            android:layout_marginLeft="@dimen/dimen_8"
+                            android:layout_marginTop="@dimen/dimen_25"
+                            android:layout_toRightOf="@+id/bottle1ImageView2"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/bottlesquare" />
+
+                        <ImageView
+                            android:id="@+id/bottle1ImageView3"
+                            android:layout_width="@dimen/dimen_20"
+                            android:layout_height="@dimen/dimen_70"
+                            android:layout_marginLeft="@dimen/dimen_8"
+                            android:layout_marginTop="@dimen/dimen_20"
+                            android:layout_toRightOf="@+id/bottle2ImageView2"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/bottleash" />
+
+                        <ImageView
+                            android:id="@+id/bottle2ImageView3"
+                            android:layout_width="@dimen/dimen_20"
+                            android:layout_height="@dimen/dimen_70"
+                            android:layout_marginLeft="@dimen/dimen_8"
+                            android:layout_marginTop="@dimen/dimen_25"
+                            android:layout_marginRight="@dimen/dimen_8"
+                            android:layout_toRightOf="@+id/bottle1ImageView3"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/bottlesquare" />
+
+                    </RelativeLayout>
 
                 </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/bottolesLayout"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    >
-
-                    <ImageView
-                        android:id="@+id/bottle1ImageView1"
-                        android:layout_width="@dimen/dimen_20"
-                        android:layout_height="@dimen/dimen_70"
-                        android:scaleType="fitXY"
-                        android:layout_marginLeft="@dimen/dimen_8"
-                        android:layout_marginTop="@dimen/dimen_20"
-                        android:src="@mipmap/bottleash"
-                        android:visibility="visible"/>
-
-                    <ImageView
-                        android:id="@+id/bottle2ImageView1"
-                        android:layout_width="@dimen/dimen_20"
-                        android:layout_height="@dimen/dimen_70"
-                        android:layout_marginLeft="@dimen/dimen_8"
-                        android:layout_marginTop="@dimen/dimen_25"
-                        android:layout_toRightOf="@+id/bottle1ImageView1"
-                        android:scaleType="fitXY"
-                        android:src="@mipmap/bottlesquare" />
-
-                    <ImageView
-                        android:id="@+id/bottle1ImageView2"
-                        android:layout_width="@dimen/dimen_20"
-                        android:layout_height="@dimen/dimen_70"
-                        android:layout_marginLeft="@dimen/dimen_8"
-                        android:layout_marginTop="@dimen/dimen_15"
-                        android:layout_toRightOf="@+id/bottle2ImageView1"
-                        android:scaleType="fitXY"
-                        android:src="@mipmap/bottleash" />
-
-                    <ImageView
-                        android:id="@+id/bottle2ImageView2"
-                        android:layout_width="@dimen/dimen_20"
-                        android:layout_height="@dimen/dimen_70"
-                        android:layout_marginLeft="@dimen/dimen_8"
-                        android:layout_marginTop="@dimen/dimen_25"
-                        android:layout_toRightOf="@+id/bottle1ImageView2"
-                        android:scaleType="fitXY"
-                        android:src="@mipmap/bottlesquare" />
-
-                    <ImageView
-                        android:id="@+id/bottle1ImageView3"
-                        android:layout_width="@dimen/dimen_20"
-                        android:layout_height="@dimen/dimen_70"
-                        android:layout_marginLeft="@dimen/dimen_8"
-                        android:layout_marginTop="@dimen/dimen_20"
-                        android:layout_toRightOf="@+id/bottle2ImageView2"
-                        android:scaleType="fitXY"
-                        android:src="@mipmap/bottleash" />
-
-                    <ImageView
-                        android:id="@+id/bottle2ImageView3"
-                        android:layout_width="@dimen/dimen_20"
-                        android:layout_height="@dimen/dimen_70"
-                        android:layout_marginLeft="@dimen/dimen_8"
-                        android:layout_marginTop="@dimen/dimen_25"
-                        android:layout_marginRight="@dimen/dimen_8"
-                        android:layout_toRightOf="@+id/bottle1ImageView3"
-                        android:scaleType="fitXY"
-                        android:src="@mipmap/bottlesquare" />
-
-                </RelativeLayout>
-
-            </RelativeLayout>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -129,6 +129,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/imagesLayout"
+                android:layout_marginTop="@dimen/dimen_15"
+                android:layout_marginBottom="?attr/actionBarSize"
                 android:orientation="vertical">
 
 

@@ -1,4 +1,4 @@
-package com.example.aiila_mobile_application.fragments;
+package com.example.aiila_mobile_application.activities;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -7,9 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -26,7 +25,7 @@ import com.github.mikephil.charting.utils.ColorTemplate;
 
 import java.util.ArrayList;
 
-public class Analytics_Fragment extends Fragment {
+public class Analytics_Activity extends BaseActivity {
 
     String[] name = {
             "Total Drinks Sold", "Revenue", "Profit"};
@@ -36,14 +35,23 @@ public class Analytics_Fragment extends Fragment {
     RecyclerView quickInfoRecyclerView;
     MoviesAdapter mAdapter;
     TextView headerTextView;
-    @Nullable
+
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.analytics_main1);
 
-        View view=inflater.inflate(R.layout.analytics_main,container,false);
+        showToolbar();
+        setStatusBarTopColor();
 
-        quickInfoRecyclerView = (RecyclerView)view.findViewById(R.id.quick_info_recycler_view);
-        BarChart chart =view.findViewById(R.id.barchart);
+        headerTextView = (TextView) findViewById(R.id.header);
+        headerTextView.setText("Inventory Management");
+
+        headerTextView = (TextView) findViewById(R.id.header);
+        headerTextView.setText("Analytics");
+
+        quickInfoRecyclerView = (RecyclerView) findViewById(R.id.quick_info_recycler_view);
+        BarChart chart = findViewById(R.id.barchart);
 
         ArrayList NoOfEmp = new ArrayList();
 
@@ -76,7 +84,7 @@ public class Analytics_Fragment extends Fragment {
 
         chart.setData(data);
 
-        PieChart pieChart =view.findViewById(R.id.piechart);
+        PieChart pieChart = findViewById(R.id.piechart);
         ArrayList NoOfEmp1 = new ArrayList();
 
         NoOfEmp1.add(new Entry(945f, 0));
@@ -104,10 +112,10 @@ public class Analytics_Fragment extends Fragment {
 
         mAdapter = new MoviesAdapter(name, price);
         LinearLayoutManager layoutManager
-                = new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false);
+                = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         quickInfoRecyclerView.setLayoutManager(layoutManager);
         quickInfoRecyclerView.setAdapter(mAdapter);
-        return view;
+
     }
 
     public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MyViewHolder> {
@@ -155,12 +163,11 @@ public class Analytics_Fragment extends Fragment {
         switch (item.getItemId()) {
             case android.R.id.home:
 
-                getActivity().finish();
+                this.finish();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
+
     }
-
-
 }

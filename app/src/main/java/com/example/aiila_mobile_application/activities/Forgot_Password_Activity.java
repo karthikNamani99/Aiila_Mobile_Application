@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.aiila_mobile_application.R;
 
-public class Forgot_Password_Activity extends AppCompatActivity implements View.OnClickListener {
+public class Forgot_Password_Activity extends BaseActivity implements View.OnClickListener {
 
     EditText edit_email, edit_mobile;
     Button btn_set_password_link, btn_otp;

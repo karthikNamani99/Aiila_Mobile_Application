@@ -28,7 +28,7 @@ import com.google.android.material.navigation.NavigationView;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class Main_Activity extends AppCompatActivity {
+public class Main_Activity extends BaseActivity {
 
     private NavigationView navigationView;
     private DrawerLayout drawer;

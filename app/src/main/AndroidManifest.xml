@@ -21,6 +21,21 @@
         <activity android:name=".activities.Main_Activity"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
 
+        <activity android:name=".activities.Selected_Items_Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+        <activity android:name=".activities.ControlMacine_Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+        <activity android:name=".activities.Inventory_management_Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+        <activity android:name=".activities.InventoryManagementForm"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+        <activity android:name=".activities.Analytics_Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
         <activity android:name=".activities.SlotConfiguration"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
 

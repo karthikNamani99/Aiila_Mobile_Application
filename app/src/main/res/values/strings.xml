@@ -11,6 +11,9 @@
     <string name="title_Analytics">Analytics</string>
     <string name="title_slot_configuration">Slot Configuar</string>
     <string name="title_control_machine">Control Machine</string>
+    <string name="spinner_volume">Volume</string>
+    <string name="spinner_type">Type</string>
+    <string name="spinner_brand">Brand</string>
 
     <string-array name="nav_item_activity_titles">
         <item>DashBoard</item>

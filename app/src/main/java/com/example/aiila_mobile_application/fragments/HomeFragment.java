@@ -20,6 +20,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 
 import com.example.aiila_mobile_application.R;
+import com.example.aiila_mobile_application.activities.Analytics_Activity;
+import com.example.aiila_mobile_application.activities.ControlMachine_Activity;
+import com.example.aiila_mobile_application.activities.Inventory_management_Activity;
 import com.example.aiila_mobile_application.activities.SlotConfiguration;
 
 public class HomeFragment extends Fragment {
@@ -107,10 +110,13 @@ public class HomeFragment extends Fragment {
                         Intent i = new Intent(getActivity(), SlotConfiguration.class);
                         startActivity(i);
                     } else if (position == 1) {
-                        Intent i = new Intent(getActivity(), SlotConfiguration.class);
+                        Intent i = new Intent(getActivity(), Analytics_Activity.class);
                         startActivity(i);
                     } else if (position == 3) {
-                        Intent i = new Intent(getActivity(), SlotConfiguration.class);
+                        Intent i = new Intent(getActivity(), Inventory_management_Activity.class);
+                        startActivity(i);
+                    } else if (position == 5) {
+                        Intent i = new Intent(getActivity(), ControlMachine_Activity.class);
                         startActivity(i);
                     }
 
