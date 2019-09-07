@@ -14,6 +14,8 @@
     <string name="spinner_volume">Volume</string>
     <string name="spinner_type">Type</string>
     <string name="spinner_brand">Brand</string>
+    <string name="btn_water">water</string>
+    <string name="btn_soda">soda</string>
 
     <string-array name="nav_item_activity_titles">
         <item>DashBoard</item>

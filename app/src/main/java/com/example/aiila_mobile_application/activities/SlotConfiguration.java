@@ -27,7 +27,7 @@ public class SlotConfiguration extends BaseActivity implements AdapterView.OnIte
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.slot_configuration);
+        setContentView(R.layout.slot_configuration_main);
 
         showToolbar();
         setStatusBarTopColor();
@@ -40,7 +40,6 @@ public class SlotConfiguration extends BaseActivity implements AdapterView.OnIte
         spinner_volume = (Spinner) findViewById(R.id.spinner_volume);
 
         btn_done=findViewById(R.id.slotSubmitButton);
-
 
         spinner_brand.setOnItemSelectedListener(this);
         spinner_type.setOnItemSelectedListener(this);

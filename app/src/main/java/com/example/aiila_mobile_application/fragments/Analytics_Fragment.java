@@ -40,7 +40,7 @@ public class Analytics_Fragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View view=inflater.inflate(R.layout.analytics_main,container,false);
+        View view=inflater.inflate(R.layout.analytics_fragment_main,container,false);
 
         quickInfoRecyclerView = (RecyclerView)view.findViewById(R.id.quick_info_recycler_view);
         BarChart chart =view.findViewById(R.id.barchart);

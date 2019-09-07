@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".splash_screens_activities.SplashActivity_main"
+        <activity
+            android:name=".splash_screens_activities.SplashActivity_main"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,50 +19,91 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activities.Main_Activity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".activities.Main_Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
 
-        <activity android:name=".activities.Selected_Items_Activity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".activities.Selected_Items_Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
 
-        <activity android:name=".activities.ControlMacine_Activity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".activities.ControlMachine_Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
 
-        <activity android:name=".activities.Inventory_management_Activity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".activities.Inventory_management_Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
 
-        <activity android:name=".activities.InventoryManagementForm"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".activities.InventoryManagementForm"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
 
-        <activity android:name=".activities.Analytics_Activity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".activities.Analytics_Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
 
-        <activity android:name=".activities.SlotConfiguration"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".activities.SlotConfiguration"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
 
-        <activity android:name=".activities.Forgot_Password_Activity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".activities.Forgot_Password_Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
 
-        <activity android:name=".activities.Mobile_Verification_Activity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".activities.Mobile_Verification_Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
 
-        <activity android:name=".activities.Register_Activity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".activities.Register_Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
 
-        <activity android:name=".activities.SetPassword_Activity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".activities.SetPassword_Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
 
-        <activity android:name=".activities.Login_Activity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".activities.Login_Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
 
-        <activity android:name=".splash_screens_activities.SplashActivity1"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".activities.Addmachine_Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
 
-        <activity android:name=".splash_screens_activities.SplashActivity2"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".activities.AddNewUser_Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
 
-        <activity android:name=".splash_screens_activities.SplashActivity3"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".activities.Users_Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity
+            android:name=".activities.Machine_Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity
+            android:name=".activities.Modify_user_Details_Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity
+            android:name=".activities.View_UserDetails_Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity
+            android:name=".splash_screens_activities.SplashActivity1"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity
+            android:name=".splash_screens_activities.SplashActivity2"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity
+            android:name=".splash_screens_activities.SplashActivity3"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+
     </application>
 
 </manifest>

@@ -5,17 +5,20 @@
     android:layout_height="match_parent"
     android:background="@color/colorWhite">
 
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:layout_below="@+id/toolbar"
-        android:background="@color/colorWhite"
         android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:background="@color/colorWhite"
             android:layout_height="match_parent"
+            android:background="@color/colorWhite"
             android:orientation="vertical">
 
 
@@ -152,7 +155,6 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:background="@color/colorWhite"
-                        android:layout_marginBottom="?attr/actionBarSize"
                         android:layout_height="wrap_content">
 
 
@@ -198,7 +200,6 @@
                             android:id="@+id/piechart"
                             android:layout_width="match_parent"
                             android:layout_height="220dp"
-                            android:background="@color/colorWhite"
                             android:layout_below="@+id/view2"
                             android:layout_marginTop="10dp" />
                     </RelativeLayout>

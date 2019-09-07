@@ -1,6 +1,7 @@
 package com.example.aiila_mobile_application.activities;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
@@ -28,7 +29,7 @@ import com.google.android.material.navigation.NavigationView;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class Main_Activity extends BaseActivity {
+public class Main_Activity extends BaseActivity{
 
     private NavigationView navigationView;
     private DrawerLayout drawer;
@@ -75,6 +76,15 @@ public class Main_Activity extends BaseActivity {
 
         // load the store fragment by default
         navigationView.setBackgroundColor(getResources().getColor(R.color.colorWhite));
+
+        imgNavHeaderBg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),View_UserDetails_Activity.class);
+                startActivity(intent);
+            }
+        });
+
 
         setUpNavigationView();
 
@@ -278,4 +288,5 @@ public class Main_Activity extends BaseActivity {
         actionBarDrawerToggle.syncState();
 
         }
+
 }

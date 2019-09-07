@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -39,13 +38,10 @@ public class Analytics_Activity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.analytics_main1);
+        setContentView(R.layout.analytics_main);
 
         showToolbar();
         setStatusBarTopColor();
-
-        headerTextView = (TextView) findViewById(R.id.header);
-        headerTextView.setText("Inventory Management");
 
         headerTextView = (TextView) findViewById(R.id.header);
         headerTextView.setText("Analytics");
