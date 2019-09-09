@@ -33,12 +33,16 @@
 
         <ImageView
             android:id="@+id/addImageView"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="@dimen/dimen_50"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
+            android:background="@drawable/addmachine_back"
             android:layout_marginRight="20dp"
-            android:src="@mipmap/add_circle" />
+            android:padding="@dimen/dimen_12"
+            android:tint="@color/colorWhite"
+
+            android:src="@drawable/machineconfiguration" />
     </RelativeLayout>
 
 </RelativeLayout>
