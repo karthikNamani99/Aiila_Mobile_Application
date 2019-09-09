@@ -37,5 +37,8 @@
     <dimen name="dimen_70">70dp</dimen>
     <dimen name="dimen_275">275dp</dimen>
     <dimen name="dimen_16">16dp</dimen>
+    <dimen name="dimen_95">95dp</dimen>
+    <dimen name="dimen_120">120dp</dimen>
+    <dimen name="dimen_75">75dp</dimen>
 
 </resources>

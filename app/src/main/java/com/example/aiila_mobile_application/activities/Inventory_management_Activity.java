@@ -49,7 +49,7 @@ public class Inventory_management_Activity extends BaseActivity {
 
     }
 
-    public class CustomAdapter extends BaseAdapter {
+    public static class CustomAdapter extends BaseAdapter {
 
         String[] result;
         Context context;

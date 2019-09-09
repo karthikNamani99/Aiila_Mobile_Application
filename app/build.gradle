@@ -38,4 +38,5 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:3.0.1'
     implementation 'com.wang.avi:library:2.1.3'
 
+
 }

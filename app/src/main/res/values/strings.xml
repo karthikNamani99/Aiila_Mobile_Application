@@ -16,6 +16,8 @@
     <string name="spinner_brand">Brand</string>
     <string name="btn_water">water</string>
     <string name="btn_soda">soda</string>
+    <string name="spinner_type1">Owner</string>
+    <string name="owner">Owner</string>
 
     <string-array name="nav_item_activity_titles">
         <item>DashBoard</item>

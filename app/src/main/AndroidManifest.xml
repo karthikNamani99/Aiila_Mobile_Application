@@ -87,9 +87,11 @@
             android:name=".activities.Modify_user_Details_Activity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
-        <activity
+               <activity
             android:name=".activities.View_UserDetails_Activity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+
 
         <activity
             android:name=".splash_screens_activities.SplashActivity1"

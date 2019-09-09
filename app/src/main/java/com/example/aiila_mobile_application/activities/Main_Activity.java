@@ -80,11 +80,13 @@ public class Main_Activity extends BaseActivity{
         imgNavHeaderBg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent intent=new Intent(getApplicationContext(),View_UserDetails_Activity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
+
             }
         });
-
 
         setUpNavigationView();
 
@@ -95,48 +97,7 @@ public class Main_Activity extends BaseActivity{
         }
     }
 
-    @Override
-    public void onBackPressed() {
 
-        doExit();
-    }
-
-    private void doExit() {
-        AlertDialog.Builder alertDialog = new AlertDialog.Builder(
-                Main_Activity.this);
-
-        alertDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                finish();
-            }
-        });
-        alertDialog.setNegativeButton("No", null);
-
-        alertDialog.setMessage("Do you want to exit?");
-        alertDialog.setTitle("AppTitle");
-
-        AlertDialog dialog = alertDialog.create();
-        dialog.show();
-
-        dialog.getWindow().setBackgroundDrawableResource(android.R.color.darker_gray);
-// Get the alert dialog buttons reference
-        Button positiveButton = dialog.getButton(AlertDialog.BUTTON_POSITIVE);
-        Button negativeButton = dialog.getButton(AlertDialog.BUTTON_NEGATIVE);
-
-        // Change the alert dialog buttons text and background color
-        positiveButton.setTextColor(Color.parseColor("#FF0B8B42"));
-//        positiveButton.setBackgroundColor(Color.parseColor("#FFE1FCEA"));
-
-        negativeButton.setTextColor(Color.parseColor("#FFFF0400"));
-//        negativeButton.setBackgroundColor(Color.parseColor("#FFFCB9B7"));
-
-
-
-
-
-    }
 
     private void loadHomeFragment() {
         selectNavMenu();

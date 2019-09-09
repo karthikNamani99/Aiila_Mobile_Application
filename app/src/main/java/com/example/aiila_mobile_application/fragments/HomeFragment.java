@@ -23,6 +23,7 @@ import com.example.aiila_mobile_application.R;
 import com.example.aiila_mobile_application.activities.Analytics_Activity;
 import com.example.aiila_mobile_application.activities.ControlMachine_Activity;
 import com.example.aiila_mobile_application.activities.Inventory_management_Activity;
+import com.example.aiila_mobile_application.activities.Machine_Activity;
 import com.example.aiila_mobile_application.activities.SlotConfiguration;
 
 public class HomeFragment extends Fragment {
@@ -117,6 +118,9 @@ public class HomeFragment extends Fragment {
                         startActivity(i);
                     } else if (position == 5) {
                         Intent i = new Intent(getActivity(), ControlMachine_Activity.class);
+                        startActivity(i);
+                    } else if (position == 6) {
+                        Intent i = new Intent(getActivity(), Machine_Activity.class);
                         startActivity(i);
                     }
 

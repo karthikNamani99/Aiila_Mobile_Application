@@ -60,7 +60,6 @@ public class Analytics_Activity extends BaseActivity {
 //        NoOfEmp.add(new BarEntry(807f, 6));
 //        NoOfEmp.add(new BarEntry(507f, 7));
 
-
         ArrayList year = new ArrayList();
 //
         year.add("1W");
@@ -71,7 +70,6 @@ public class Analytics_Activity extends BaseActivity {
         year.add("1Y");
 //        year.add("2014");
 //        year.add("2015");
-
 
         BarDataSet bardataset = new BarDataSet(NoOfEmp, "Days/Months/years");
         chart.animateY(1000);
