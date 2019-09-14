@@ -1,11 +1,18 @@
 package com.example.aiila_mobile_application.activities;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.view.KeyEvent;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,9 +27,13 @@ import java.util.List;
 
 public class SlotConfiguration extends BaseActivity implements AdapterView.OnItemSelectedListener, View.OnClickListener {
 
-    Spinner spinner_brand,spinner_type,spinner_volume;
+    Spinner spinner_brand, spinner_type, spinner_volume;
     TextView headerTextView;
+
+    ImageView bottle1ImageView1, bottle2ImageView1, bottle1ImageView2, bottle2ImageView2, bottle1ImageView3, bottle2ImageView3;
     Button btn_done;
+
+    boolean flag = false;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -39,11 +50,25 @@ public class SlotConfiguration extends BaseActivity implements AdapterView.OnIte
         spinner_type = (Spinner) findViewById(R.id.spinner_type);
         spinner_volume = (Spinner) findViewById(R.id.spinner_volume);
 
-        btn_done=findViewById(R.id.slotSubmitButton);
+        bottle1ImageView1 = findViewById(R.id.bottle1ImageView1);
+        bottle2ImageView1 = findViewById(R.id.bottle2ImageView1);
+        bottle1ImageView2 = findViewById(R.id.bottle1ImageView2);
+        bottle2ImageView2 = findViewById(R.id.bottle2ImageView2);
+        bottle1ImageView3 = findViewById(R.id.bottle1ImageView3);
+        bottle2ImageView3 = findViewById(R.id.bottle2ImageView3);
+
+        btn_done = findViewById(R.id.slotSubmitButton);
 
         spinner_brand.setOnItemSelectedListener(this);
         spinner_type.setOnItemSelectedListener(this);
         spinner_volume.setOnItemSelectedListener(this);
+
+        bottle1ImageView1.setOnClickListener(this);
+        bottle2ImageView1.setOnClickListener(this);
+        bottle1ImageView2.setOnClickListener(this);
+        bottle2ImageView2.setOnClickListener(this);
+        bottle1ImageView3.setOnClickListener(this);
+        bottle2ImageView3.setOnClickListener(this);
 
         btn_done.setOnClickListener(this);
 
@@ -99,27 +124,58 @@ public class SlotConfiguration extends BaseActivity implements AdapterView.OnIte
         spinner_volume.setAdapter(dataAdapter2);
 
     }
+
+
     @Override
     public void onClick(View view) {
 
-        switch (view.getId()){
+        switch (view.getId()) {
 
             case R.id.slotSubmitButton:
                 Intent intent = new Intent(getApplicationContext(), Selected_Items_Activity.class);
-//                intent.putExtra("data",String.valueOf(spinner_brand.getSelectedItem()));
-//                intent.putExtra("data",String.valueOf(spinner_type.getSelectedItem()));
-//                intent.putExtra("data",String.valueOf(spinner_volume.getSelectedItem()));
                 startActivity(intent);
 
                 break;
 
 
+            case R.id.bottle1ImageView1:
+
+                view.setActivated(!view.isActivated());
+
+                break;
+            case R.id.bottle2ImageView1:
+
+                view.setActivated(!view.isActivated());
+
+                break;
+            case R.id.bottle1ImageView2:
+
+                view.setActivated(!view.isActivated());
+
+                break;
+            case R.id.bottle2ImageView2:
+
+                view.setActivated(!view.isActivated());
+
+                break;
+            case R.id.bottle1ImageView3:
+
+                view.setActivated(!view.isActivated());
+
+                break;
+            case R.id.bottle2ImageView3:
+
+                view.setActivated(!view.isActivated());
+
+                break;
+
         }
 
     }
+
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long l) {
-        switch (view.getId()){
+        switch (view.getId()) {
 
             case R.id.spinner_brand:
                 String item = parent.getItemAtPosition(position).toString();

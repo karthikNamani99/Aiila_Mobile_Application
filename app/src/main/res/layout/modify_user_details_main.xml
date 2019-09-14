@@ -192,9 +192,10 @@
                 android:inputType="textPassword"
                 android:paddingLeft="@dimen/dimen_5"
                 android:text="password"
+             
                 android:textColor="@color/colorBlack"
                 android:textSize="@dimen/dimen_15"
-                app:passwordToggleEnabled="true" />
+                />
         </LinearLayout>
 
 

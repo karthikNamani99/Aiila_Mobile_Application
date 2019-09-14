@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -26,6 +27,8 @@ public class Slot_Configuration_Fragment extends Fragment implements AdapterView
     Spinner spinner_brand, spinner_type, spinner_volume;
     Button btn_done;
 
+    ImageView bottle1ImageView1, bottle2ImageView1, bottle1ImageView2, bottle2ImageView2, bottle1ImageView3, bottle2ImageView3;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -41,6 +44,20 @@ public class Slot_Configuration_Fragment extends Fragment implements AdapterView
         spinner_brand.setOnItemSelectedListener(this);
         spinner_type.setOnItemSelectedListener(this);
         spinner_volume.setOnItemSelectedListener(this);
+
+        bottle1ImageView1 = view.findViewById(R.id.bottle1ImageView1);
+        bottle2ImageView1 = view.findViewById(R.id.bottle2ImageView1);
+        bottle1ImageView2 = view.findViewById(R.id.bottle1ImageView2);
+        bottle2ImageView2 =view. findViewById(R.id.bottle2ImageView2);
+        bottle1ImageView3 = view.findViewById(R.id.bottle1ImageView3);
+        bottle2ImageView3 = view.findViewById(R.id.bottle2ImageView3);
+
+        bottle1ImageView1.setOnClickListener(this);
+        bottle2ImageView1.setOnClickListener(this);
+        bottle1ImageView2.setOnClickListener(this);
+        bottle2ImageView2.setOnClickListener(this);
+        bottle1ImageView3.setOnClickListener(this);
+        bottle2ImageView3.setOnClickListener(this);
 
         btn_done.setOnClickListener(this);
 
@@ -109,6 +126,38 @@ public class Slot_Configuration_Fragment extends Fragment implements AdapterView
 //                intent.putExtra("data",String.valueOf(spinner_volume.getSelectedItem()));
                 startActivity(intent);
                 break;
+
+            case R.id.bottle1ImageView1:
+
+                view.setActivated(!view.isActivated());
+
+                break;
+            case R.id.bottle2ImageView1:
+
+                view.setActivated(!view.isActivated());
+
+                break;
+            case R.id.bottle1ImageView2:
+
+                view.setActivated(!view.isActivated());
+
+                break;
+            case R.id.bottle2ImageView2:
+
+                view.setActivated(!view.isActivated());
+
+                break;
+            case R.id.bottle1ImageView3:
+
+                view.setActivated(!view.isActivated());
+
+                break;
+            case R.id.bottle2ImageView3:
+
+                view.setActivated(!view.isActivated());
+
+                break;
+
 
         }
 
